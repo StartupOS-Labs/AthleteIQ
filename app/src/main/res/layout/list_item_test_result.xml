@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/testNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            tools:text="Push-ups (1 min)" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            tools:text="Needs Improvement"
+            tools:textColor="@color/status_needs_improvement"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="8dp"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        tools:progress="40"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/yourScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_alignParentStart="true"
+            tools:text="25" />
+
+        <TextView
+            android:id="@+id/avgScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#A0AEC0"
+            android:layout_alignParentEnd="true"
+            tools:text="Avg. Reps 35" />
+    </RelativeLayout>
+
+</LinearLayout>
+

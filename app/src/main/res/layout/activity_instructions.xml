@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".InstructionsActivity">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/exerciseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Squats Assessment"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backButton" />
+
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_generic_exercise"
+        app:layout_constraintTop_toBottomOf="@id/exerciseTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exerciseImage"> <TextView
+        android:id="@+id/instructionsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:text="Instructions for the selected exercise." />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Start Assessment"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#C53030"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

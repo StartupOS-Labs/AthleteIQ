@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="status_elite">#48BB78</color>
+    <color name="status_developing">#F6E05E</color>
+    <color name="status_needs_improvement">#F56565</color>
+    <color name="primary_color">#3182CE</color>
+
+</resources>
